@@ -14,5 +14,5 @@ err := Copy("your/directory", "your/directory.copy")
 ```
 
 This is just a copy of the well documented original repository, but with one extension:
-The copy is done with a prefixed with "\\?\". This is done to overcome the windows file path restriction of 260 characters. With this, the limit is 32000 characters.
+The copy is done with a prefixed "\\\\?\\". This is done to overcome the windows file path restriction of 260 characters. With this, the limit is 32000 characters.
 This is needed for example to copy data directories from other solutions (like Alfresco) in Windows. Without this change, the copy of longer pathnames than 260 chars will fail. 
